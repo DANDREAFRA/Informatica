@@ -64,7 +64,7 @@ class Diploma {
 		
 		return "Tipo: " this.tipo + "\nAnno: " + this.anno + "\nVoto: " + this.voto + "\n"
 	
-	
+	}
 	
 }
 	
