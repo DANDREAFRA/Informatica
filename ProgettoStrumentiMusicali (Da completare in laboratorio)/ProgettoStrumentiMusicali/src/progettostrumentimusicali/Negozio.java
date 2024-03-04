@@ -62,26 +62,26 @@ public class Negozio {
     public String toString(){
         return "/nNome del negozio: " + this.nome + "/nIndirizzo: " + this.indirizzo + "/nindirizzo email: " + this.mail + "/nPartita Iva: " + this.pIva;
     }
+	
+	public void aggiungiStrumento(Strumento strumenti){
+		strumento.add(strumento);
+	}
     
-    public void aggiungiFisarmonica(Fisarmonica fisarmonica){
-        fisarmonica.add(fisarmonica);
-        
-    }
-        
-    public void aggiungiViolino(Violino violino){
-        voilino.add(violino);
-    }
+    public void visualizzaNegozio(){
+		System.out.println(strumenti.size());
+	}
     
-    public Strumento ricercaStrumento(String id){
-        
-        if(!strumenti.isEmpty()){
-            for(int i=0; i<strumenti.size(); i++){
-                if(strumenti.get(i).getId().equals(id)) {return strumenti.get(i);}
-            }
-        }
-    }
-    
-    
+    public static void cercaStrumento(String id){
+		for(int a = 0; a<this.strumenti.size(); a++){
+			Strumento otnemurtS = this.strumenti.get(a);
+				if(otnemurtS.getId().equalsIgnoreCase(id)){
+					return id;
+				} else {
+					System.out.println("Nessun risultato per id " + id);
+					return null;
+				}
+		}
+	}
     
    
     
