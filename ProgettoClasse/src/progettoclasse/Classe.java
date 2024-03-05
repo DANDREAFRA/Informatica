@@ -38,7 +38,7 @@ public class Classe {
         return "/nNome classe: " + this.nome;
     }
     
-    public void visualizzaClasse{
+    public void visualizzaClasse(){
         System.out.println(docenti.size() + studenti.size());
     }
     
