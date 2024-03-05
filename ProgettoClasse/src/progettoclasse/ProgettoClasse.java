@@ -8,13 +8,34 @@ public class ProgettoClasse {
     public static void main(String[] args) {
         Classe classe = null;
         Docente docente = null;
-        Studente = null;
+        Studente studente = null;
         Scanner r = new Scanner(System.in);
         int slt = 0;
         
         do{
             slt = menu;
-        }
+            switch(slt){
+                case 1: 
+                    docente = inserisciDocente();
+                break;
+                case 2:
+                    studente = inserisciStudente();
+                break;
+                case 3:
+                    docente = cercaDocente();
+                break;
+                case 4: 
+                    studente = cercaStudente();
+                break;
+                case 0:
+                    System.out.println("X_X");
+                break;
+                default:
+                    System.out.println("La scelta puo' avere solo valore da 0 a 4!");
+                break;
+            }
+                
+        }while(slt!=0);
         
     }
     
@@ -26,6 +47,7 @@ public class ProgettoClasse {
             System.out.println("2. Inserisci uno studente nella classe");
             System.out.println("3. Cerca uno studente");
             System.out.println("4. Cerca un docente");
+            System.out.println("...Premi 0 per uscire");
             
             try{
                 int slt = sc.nextLine();
