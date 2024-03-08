@@ -75,7 +75,7 @@ public class StudioVeterinario {
     
     public Animale ricercaAnimale(String id){
          for(int x = 0; x<this.animali.size(); x++){
-             Animale animale = this.animali.get(X);
+             Animale animale = this.animali.get(x);
              if(animale != null && animale.getId().equalsIgnoreCase(id)){
                  return animale;
              } else { return null; }
