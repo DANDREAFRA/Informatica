@@ -64,7 +64,9 @@ public class StudioVeterinario {
     }
     
     public void visualizzaStudioVeterinario(){
-        System.out.println(animali.size());
+        
+        for(i=0; i<this.animali.size(); i++){
+            System.out.println(this.animali.get(i).toString());
     }
     
     public String toString(){
