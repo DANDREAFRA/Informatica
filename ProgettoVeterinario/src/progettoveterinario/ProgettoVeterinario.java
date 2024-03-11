@@ -150,7 +150,7 @@ public class ProgettoVeterinario {
 
     }
        
-    public static void ricercaAnimale(StudioVeterinario studioVeterinario){
+    public static void cercaAnimale(StudioVeterinario studioVeterinario){
         Scanner tk = new Scanner(System.in);
         if(studioVeterinario != null){
             System.out.println("Inserisci l'id dell'animale da cercare");
