@@ -22,7 +22,7 @@ public class ProgettoVeterinario {
                         aggiungiAnimale(studioVeterinario);
                     break;
                     case 4:
-                        ricercaAnimale(studioVeterinario);
+                        cercaAnimale(studioVeterinario);
                     break;
                     case 0:
                         System.out.println("SYSTEM_SHUTTING_DOWN:_");
