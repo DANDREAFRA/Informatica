@@ -8,8 +8,8 @@ public class Negozio {
     private String indirizzo;
     private String telefono;
     private String mail;
-    private ArrayList<Costruzioni> = new ArrayList<Costruzioni>();
-    private ArrayList<Trenino> = new ArrayList<Trenino>();
+    private ArrayList<Costruzioni> costruzioni = new ArrayList<>();
+    private ArrayList<Trenino> trenini = new ArrayList<>();
 
     
     public Negozio(){}
@@ -57,4 +57,25 @@ public class Negozio {
         return "/nNome del negozio: " + this.nomeNeg + "/nIndirizzo: " + this.indirizzo + "/nindirizzo email: " + this.mail;
     }
     
+	public Trenino ricercaTrenino(String nome) {
+        for(int i=0; i<this.trenini.size();i++) {
+            Trenino trenino = this.trenini.get(i);
+            if (trenino != null && trenino.getNome().equalsIgnoreCase(nome)) {
+                return trenino;
+            }
+        }
+        return null;
+    }
+	
+	public Costruzioni ricercaCostruzioni(String nome) {
+        for(int i=0; i<this.costruzioni.size();i++) {
+            Costruzioni costruzione = this.costruzioni.get(i);
+            if (costruzione != null && costruzione.getNome().equalsIgnoreCase(nome)) {
+                return costruzione;
+            }
+        }
+        return null;
+    }
+	
+	
 }
