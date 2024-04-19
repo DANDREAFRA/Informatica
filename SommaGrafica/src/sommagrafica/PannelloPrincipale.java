@@ -22,6 +22,9 @@ public class PannelloPrincipale extends javax.swing.JPanel {
     }
     
     private void inizializza(){
+        this.jTextFieldRISULTATO.setEditable(false);
+        this.jTextFieldRISULTATO.setBackground(UIManager.getColor("TextField.background"))
+        
         this.jButtonSOMMA.addActionListener()(new gestoreAzioni(pannelloPrincipale.getTxtPRIMONUM(), pannelloPrincipale.getTxtSECONDONUM(), pannelloPrincipale.getTxtRISULTATO());
         this.jButtonCANCELLA.addActionListener()(new gestoreAzioni(pannelloPrincipale.getTxtPRIMONUM(), pannelloPrincipale.getTxtSECONDONUM(), pannelloPrincipale.getTxtRISULTATO());
         this.jButtonESCI.addActionListener(new GestoreAzioni());

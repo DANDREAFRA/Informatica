@@ -44,6 +44,7 @@ public class FinestraPrincipale extends javax.swing.JFrame {
         jMenuItem2.setText("jMenuItem2");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Somma numeri");
 
         jMenu1.setText("File");
 
